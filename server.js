@@ -23,6 +23,7 @@ io.Listener.prototype.broadcast = function(message, except, atts){
 	for(var j in atts) {
 	    if(atts[j] === this.clients[k[i]].sessionId) {
 		sendFlag = false;
+		break;
 	    }
 	}
 
